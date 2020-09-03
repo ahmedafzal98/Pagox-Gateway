@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PagoX Gateway</string>
+    <string name="footer1"> Integrate secure credit &amp; debit card acceptance into your business</string>
+    <string name="footer2">Simple &amp; Secure Payment "\n" Gateway</string>
+    <string name="footer3">100k+ Partners &amp; Merchants Integrated."\n" 5000K+ Transactions Volume."\n" 25 million+ Transactions Amount."\n"Low Processing Fees per Transaction.</string>
+    <string name="footer4">Need help 24 / 7 , Call : 0800 123 123 , Email : </string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="payment">Payment process</string>
+    <string name="report">Report Manager</string>
+    <string name="order">Order Manager</string>
+    <string name="merchant">Merchant Settlemet</string>
+    <string name="merchant_fees">Merchant Fees</string>
+    <string name="setting">Settings</string>
+    <string name="tickets">Tickets</string>
+    <string name="audit">Audit Log</string>
+    <string name="developers">Developers Guide | API</string>
+
+    <string-array name="payment">
+        <item>Credit Card / ACH</item>
+        <item>Card Profie</item>
+        <item>Pay Link</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

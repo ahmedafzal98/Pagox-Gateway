@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/dat"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/date"
+                android:layout_toRightOf="@id/dat"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry :"
+                android:layout_below="@id/dat"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/exp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry "
+                android:id="@+id/expiry"
+                android:layout_toRightOf="@id/exp"
+                android:layout_below="@id/date"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="58dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:layout_below="@id/exp"
+                android:layout_toRightOf="@id/can"
+                android:text="Cancel "
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Date :"
+                android:layout_below="@id/cancel"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/pd"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Date"
+                android:layout_below="@id/cancel"
+                android:id="@+id/pay_date"
+                android:layout_toRightOf="@id/pd"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel :"
+                android:layout_below="@id/expiry"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/can"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="paid "
+                android:id="@+id/paid"
+                android:layout_toRightOf="@id/pd"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="38dp"
+                android:layout_below="@id/pay_date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid:"
+                android:layout_below="@id/pd"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/pai"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/access_code"
+                android:text="Access Code "
+                android:layout_below="@id/paid"
+                android:layout_toRightOf="@id/ac"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access Code:"
+                android:layout_below="@id/pai"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/ac"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

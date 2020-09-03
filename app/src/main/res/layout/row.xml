@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#fff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_Card_Holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="TextView1"
+                android:textColor="#282828"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Card_Holder"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="6dp"
+                android:text="Payment ref ID:"
+                android:textColor="#FF6B6B6B"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Card_Holder"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/payment"
+                android:textColor="#039be5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usd"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="3dp"
+                android:text="3918 minutes ago"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_paymemt_id"
+                android:text="Payment Type Id"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_last4digit"
+                android:text="Last 4 Digit"
+                android:layout_below="@id/txt_paymemt_id"
+                android:layout_centerHorizontal="true"
+                android:textSize="9sp"
+                android:layout_marginTop="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_remAmount"
+                android:text="Remaining Amount"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

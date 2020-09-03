@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".CreditcardFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_payment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#eef2f4"
+                android:gravity="center"
+                android:text="PagoX Payment"
+                android:textColor="#404040"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:backgroundTint="@color/tint2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_visa"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#fff"
+                    android:src="@drawable/visa_icon" />
+
+                <ImageView
+                    android:id="@+id/img_master"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_visa"
+                    android:background="#fff"
+                    android:src="@drawable/master_card_blue_icon" />
+                <ImageView
+                    android:id="@+id/img_american_express"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_master"
+                    android:background="#fff"
+                    android:src="@drawable/american_express_icon" />
+                <ImageView
+                    android:id="@+id/img_discover"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_american_express"
+                    android:background="#fff"
+                    android:src="@drawable/discover_icon" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_group"
+                    android:layout_below="@id/img_discover">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_sale"
+                        android:text="Sale"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_auth"
+                        android:text="Auth"
+                        android:textColor="#000"/>
+
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:id="@+id/txt_card_holder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_group"
+                    android:text="Card Holder Name"
+                    android:textColor="	#404040"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_card_hol_name"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_card_holder_name"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_card_hol_name"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Card Number"
+                    android:textColor="	#404040"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.example.pagox.creditCardEditText
+                    android:id="@+id/edit_card_num"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_card_num"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_input"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:maxLength="16"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_exp_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_card_num"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Expiry Year"
+                    android:textColor="	#404040"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_exp_date"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_exp_date"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/txt_exp_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_card_num"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/edit_exp_date"
+                    android:text="Expiry Month"
+                    android:textColor="	#404040"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_exp_month"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_exp_month"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/edit_exp_date"
+                    android:background="@drawable/custom_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:maxLength="2"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_exp_date"
+                    android:layout_marginTop="10dp"
+                    android:text="Amount"
+                    android:textColor="	#404040"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_amount"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_amount"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_amount"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="CVV"
+                    android:textColor="	#404040"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edit_cvv"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_cvv"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_isProfile"
+                    android:layout_below="@id/edit_cvv"
+                    android:layout_marginTop="10dp"
+                    android:text="Is Profile Save"/>
+
+                <Button
+                    android:id="@+id/btn_transaction"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/check_isProfile"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:foreground="?actionBarItemBackground"
+                    android:elevation="10dp"
+                    android:text="NEXT"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prog_bar"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_below="@id/edit_amount"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/doyou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_transaction"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="100dp"
+                    android:text="Do You Want More Details?"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_clickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_transaction"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_toRightOf="@id/doyou"
+                    android:text="CLICK HERE"
+                    android:textColor="#039be5"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

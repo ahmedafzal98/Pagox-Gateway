@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Void"
+        android:text="Void , Capture &amp; Refund "
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_alignStart="@id/txt_doYou"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/txt_doYou" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_doYou"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Do you want capture, Void or refund amount?"
+        android:layout_below="@id/txt_Void"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_void"
+        android:layout_alignStart="@id/txt_doYou"
+        android:layout_below="@id/txt_doYou"
+        android:text="void"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/txt_doYou" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/check_void"
+        android:id="@+id/check_capture"
+        android:layout_below="@id/check_void"
+        android:text="capture"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/check_void" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_refund"
+        android:layout_alignStart="@id/check_capture"
+        android:layout_below="@id/check_capture"
+        android:text="refund"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/check_capture" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_amount"
+        android:text="Remaining Amount"
+        android:layout_below="@id/check_refund"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_amount_void"
+        android:layout_below="@id/txt_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:text="544"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="SUBMIT"
+        android:textColor="#fff"
+        android:elevation="10dp"
+        android:layout_below="@id/edit_amount_void"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

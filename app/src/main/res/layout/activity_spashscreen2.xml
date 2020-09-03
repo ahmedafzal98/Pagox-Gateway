@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/footer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradientimage"/>
+
+        <TextView
+            android:id="@+id/text_footerText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:padding="4dp"
+            android:text="@string/footer2"
+            android:textColor="#fff"
+            android:textFontWeight="400"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_footerText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_footerText1"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10dp"
+            android:padding="4dp"
+            android:text="@string/footer1"
+            android:textColor="#fff"
+            android:textFontWeight="400"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_footerText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_footerText2"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:lineSpacingExtra="10dp"
+            android:padding="4dp"
+            android:text="@string/footer3"
+            android:textColor="#fff"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".HomeFragment">
+
+        <TextView
+            android:id="@+id/dashboard"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Dashboard"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_refresh_black_24dp"
+            android:layout_toRightOf="@id/dashboard"
+            android:id="@+id/btn_refresh"
+            android:foreground="?actionBarItemBackground"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_below="@id/dashboard"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:indeterminateDrawable="@drawable/progress"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_below="@id/dashboard"
+            android:layout_height="300dp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <ImageView
+            android:id="@+id/approve"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_below="@id/bar_chart"
+            android:layout_marginLeft="50dp"
+            android:background="#00ff01"
+            android:src="@drawable/ic_check_box_outline_blank_black_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_approve"
+            android:text="SaleTransaction"
+            android:layout_toRightOf="@id/approve"
+            android:textSize="9sp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#000"
+            android:layout_below="@id/bar_chart"/>
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:id="@+id/void_refund"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/txt_approve"
+            android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+            android:layout_below="@id/approve"
+            android:background="#F80000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_void_refund"
+            android:text="Declined"
+            android:textSize="9sp"
+            android:layout_below="@id/txt_approve"
+            android:layout_toRightOf="@id/void_refund"
+            android:layout_marginLeft="2dp"
+            android:textColor="#000"/>
+<!--        <ImageView-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp"-->
+<!--            android:id="@+id/refund"-->
+<!--            android:src="@drawable/ic_check_box_outline_blank_black_24dp"-->
+<!--            android:layout_below="@id/void_refund"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_toLeftOf="@id/txt_refund"-->
+<!--            android:background="#fff879"/>-->
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:id="@+id/img_void"
+            android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+            android:layout_below="@id/bar_chart"
+            android:layout_toLeftOf="@id/txt_fees"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="2dp"
+            android:background="#0038F8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_fees"
+            android:text="Total Profit"
+            android:textSize="9sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bar_chart"
+            android:layout_marginRight="15dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_refund"
+            android:text="Void &amp; Refund"
+            android:textSize="9sp"
+            android:layout_below="@id/txt_fees"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#000"/>
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:id="@+id/settlement"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+            android:layout_below="@id/txt_fees"
+            android:layout_toLeftOf="@id/txt_refund"
+            android:layout_marginTop="2dp"
+            android:background="#ffff00"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txt_settlement"-->
+<!--            android:text="Total Settlement"-->
+<!--            android:textSize="9sp"-->
+<!--            android:layout_below="@id/approve"-->
+<!--            android:layout_toRightOf="@id/settlement"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:textColor="#000"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp"-->
+<!--            android:id="@+id/profit"-->
+<!--            android:src="@drawable/ic_check_box_outline_blank_black_24dp"-->
+<!--            android:layout_below="@id/settlement"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:background="#0000de"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp"-->
+<!--            android:id="@+id/declined"-->
+<!--            android:src="@drawable/ic_check_box_outline_blank_black_24dp"-->
+<!--            android:layout_below="@id/txt_settlement"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:background="#ff0000"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp"-->
+<!--            android:id="@+id/total_transaction"-->
+<!--            android:src="@drawable/ic_check_box_outline_blank_black_24dp"-->
+<!--            android:layout_below="@id/refund"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:background="#ff0000"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txt_declined"-->
+<!--            android:text="Declined Amount"-->
+<!--            android:textSize="9sp"-->
+<!--            android:layout_below="@id/txt_settlement"-->
+<!--            android:layout_toRightOf="@id/settlement"-->
+<!--            android:layout_marginLeft="3dp"-->
+<!--            android:layout_marginTop="-2dp"-->
+<!--            android:textColor="#000"/>-->
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txt_void_refund"
+            android:gravity="center"
+            android:text="Transaction History"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/search_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@id/dashboard"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="24dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:background="@drawable/search_view"-->
+<!--            android:ems="10"-->
+<!--            android:textSize="13sp"-->
+<!--            android:hint="Search By User"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColor="#000" />-->
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/transaction"
+            android:layout_marginBottom="70dp"
+            android:divider="@null"
+            android:dividerHeight="-10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionDetails"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    android:padding="16sp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:backgroundTint="@color/tint2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tender Type Id"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_tenderId"
+            android:hint="Tender Type Id"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_amount"
+            android:hint="Amount"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RemainingAmount"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_remaAmount"
+            android:hint="RemainingAmount"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 4 Digit"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_last4digit"
+            android:hint="Last 4 Digit"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_status"
+            android:hint="Status"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_message"
+            android:hint="TMessage"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auth Code"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_auth_code"
+            android:hint="Auth Code"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Type ID"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_payId"
+            android:hint="Payment Type ID"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Month"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Expiry Month"
+            android:id="@+id/edit_expMonth"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Year"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Expiry Year"
+            android:id="@+id/edit_expYear"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Profile Save"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_isProfile"
+            android:hint="Is Profile Save"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_accNumb"
+            android:hint="Account Number"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Name"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_accName"
+            android:hint="Account Name"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</ScrollView>

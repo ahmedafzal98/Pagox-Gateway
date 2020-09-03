@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+    <color name="tint">#73BE73</color>
+    <color name="tint2">#9e9e9e</color>
+    <color name="searchView">#fff</color>
+
+
+</resources>

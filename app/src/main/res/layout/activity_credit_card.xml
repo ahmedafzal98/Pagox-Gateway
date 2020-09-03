@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreditCard">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="#000"-->
+<!--        android:elevation="4dp"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Tender Type"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_credit_card"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:checked="true"-->
+<!--                android:text="credit card" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_echeck"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Echeck" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Payment Type"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_sale"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Sale" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_auth"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Auth" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_recurring"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="recurring" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="22dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Payment Details"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_card"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Card Number"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/card1"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:hint="0000"-->
+<!--                    android:inputType="number" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/card2"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:hint="0000"-->
+<!--                    android:inputType="number" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/card3"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:hint="0000"-->
+<!--                    android:inputType="number" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/card4"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:hint="0000"-->
+<!--                    android:inputType="number" />-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/txt_swipe"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Swipe Card"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="#039be5"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="17sp" />&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_acc_num"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Account Number"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/acc_num"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:hint="Account Number"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_acc_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Account Name"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/acc_name"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:hint="Acount Name"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_rou_num"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Routing Number"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/rou_num"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:hint="Routing Number"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_amounts"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Account Name"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/c_amount"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:hint="Amount"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_expiry_month"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Expiry Month"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/exp_mon"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Expiry Month" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_cvv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="CVV"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/cvv"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="CVV" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_card_holder"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Card Holder name"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/cardHolderName"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Card Holder name" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_expiry_year"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Expiry Year"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/expiryYear"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Expiry Year" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_amount"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Amount"-->
+<!--                android:textColor="#9e9e9e" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/amount"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Amount" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/check_save"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Is Profile Save" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Customer Details"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="First Name"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/first_name"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="First Name"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Last Name"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/last_name"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Last Name"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Select Country"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <com.hbb20.CountryCodePicker-->
+<!--                android:id="@+id/country"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:autofillHints="Select Country"-->
+<!--                android:backgroundTint="@color/colorPrimary"-->
+<!--                android:visibility="gone">-->
+
+<!--            </com.hbb20.CountryCodePicker>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="City"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/city"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="City"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Company Name"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/company_name"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Company Name"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Phone No"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/phone_no"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Phone No"-->
+<!--                android:inputType="number"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Address1"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/adress1"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Address1"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Address2"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/adress2"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Address2"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="State"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/state"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="State"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Zip Code"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/postal_code"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Postal Code"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Email"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/email"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Email"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Invoice"-->
+<!--                android:textColor="#9e9e9e"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/invoice"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:hint="Invoice"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginLeft="20dp">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_transaction"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="#000"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:text="Process Transaction"-->
+<!--                    android:textColor="#fff" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_clear"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="#b0b0b0"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:text="Clear"-->
+<!--                    android:textColor="#fff" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                tools:ignore="MissingConstraints">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:id="@+id/btn_transaction"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="200dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginLeft="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginBottom="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:background="#000"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:elevation="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:text="Process Transaction"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textColor="#fff" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:id="@+id/btn_clear"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginBottom="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:background="#b0b0b0"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:elevation="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:text="Clear"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textColor="#fff" />&ndash;&gt;-->
+<!--            &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#D3D3D3"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:foregroundGravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="PagoX © Copyright 2020. All rights reserved. Powered by  " />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:foregroundGravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="www.codeitect.com"-->
+<!--                    android:textColor="#039be5" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+</LinearLayout>

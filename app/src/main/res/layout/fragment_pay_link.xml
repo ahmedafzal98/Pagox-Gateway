@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".payLinkFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+        <Button
+            android:id="@+id/btn_pay_link"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button"
+            android:elevation="6dp"
+            android:text="CREATE PAYMENT LINK"
+            android:foreground="?actionBarItemBackground"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_payment"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:foreground="?actionBarItemBackground"
+            android:background="@drawable/ic_refresh_black_24dp" />
+
+        <ListView
+            android:id="@+id/lisview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_payment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="-10dp"
+            android:divider="@null"
+            android:layout_marginBottom="40dp" />
+    </RelativeLayout>
+
+</LinearLayout>
